@@ -4,6 +4,9 @@
     <Filter Include="NEngine">
       <UniqueIdentifier>{49E3F220-B5C2-71BC-BEDA-FC922A39D81D}</UniqueIdentifier>
     </Filter>
+    <Filter Include="NEngine\Events">
+      <UniqueIdentifier>{0DE3B0E6-F9B0-A4EC-E244-1513CEB18051}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\NEngine\Application.h">
@@ -15,10 +18,16 @@
     <ClInclude Include="src\NEngine\EntryPoint.h">
       <Filter>NEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\NEngine\Events\Event.h">
+      <Filter>NEngine\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\NEngine\Log.h">
       <Filter>NEngine</Filter>
     </ClInclude>
     <ClInclude Include="src\NothingEngine.h" />
+    <ClInclude Include="src\NEngine\Events\KeyEvent.h" />
+    <ClInclude Include="src\NEngine\Events\MouseEvent.h" />
+    <ClInclude Include="src\NEngine\Events\ApplicationEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\NEngine\Application.cpp">

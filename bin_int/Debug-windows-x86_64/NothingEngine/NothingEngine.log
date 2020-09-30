@@ -1,1 +1,6 @@
-﻿  NothingEngine.vcxproj -> D:\Creativity\Programing\CPP\NothingEngine\NothingEngine\..\bin\Debug-windows-x86_64\NothingEngine\NothingEngine.dll
+﻿  Log.cpp
+D:\Creativity\Programing\CPP\NothingEngine\NothingEngine\src\NEngine\Log.h(22,54): warning C4251: 'NothingEngine::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'NothingEngine::Log'
+D:\Creativity\Programing\CPP\NothingEngine\NothingEngine\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
+D:\Creativity\Programing\CPP\NothingEngine\NothingEngine\src\NEngine\Log.h(23,56): warning C4251: 'NothingEngine::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'NothingEngine::Log'
+D:\Creativity\Programing\CPP\NothingEngine\NothingEngine\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
+  NothingEngine.vcxproj -> D:\Creativity\Programing\CPP\NothingEngine\NothingEngine\..\bin\Debug-windows-x86_64\NothingEngine\NothingEngine.dll
