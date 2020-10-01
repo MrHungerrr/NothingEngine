@@ -1,6 +1,7 @@
+#include <NEpch.h>
+
 #include "Application.h"
-#include "NEngine/Events/ApplicationEvent.h"
-#include "NEngine/Log.h"
+
 
 NothingEngine::Application::Application()
 {

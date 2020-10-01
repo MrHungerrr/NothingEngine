@@ -1,3 +1,4 @@
+#include <NEpch.h>
 #include "Log.h"
 
 namespace NothingEngine

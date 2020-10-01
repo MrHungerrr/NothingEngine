@@ -1,9 +1,7 @@
 #pragma once
 
 #include "NEngine/Core.h"
-
-#include <string>
-#include <functional>
+#include <NEpch.h>
 
 
 namespace NothingEngine

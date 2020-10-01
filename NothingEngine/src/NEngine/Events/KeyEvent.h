@@ -3,8 +3,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace NothingEngine
 {
 	class NOTHING_ENGINE_API KeyEvent : public Event

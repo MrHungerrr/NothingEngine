@@ -2,6 +2,7 @@
 
 // For use by other applications
 
+#include <NEpch.h>
 #include "NEngine/Log.h"
 #include "NEngine/Application.h" 
 

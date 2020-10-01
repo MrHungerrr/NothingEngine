@@ -18,6 +18,9 @@ project "NothingEngine"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin_int/" .. outputdir .. "/%{prj.name}")
 
+    pchheader "NEpch.h"
+    pchsource "%{prj.name}/src/NEpch.cpp"
+
     files
     {
         "%{prj.name}/src/**.h",

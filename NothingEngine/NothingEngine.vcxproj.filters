@@ -18,16 +18,23 @@
     <ClInclude Include="src\NEngine\EntryPoint.h">
       <Filter>NEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\NEngine\Events\ApplicationEvent.h">
+      <Filter>NEngine\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\NEngine\Events\Event.h">
+      <Filter>NEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NEngine\Events\KeyEvent.h">
+      <Filter>NEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NEngine\Events\MouseEvent.h">
       <Filter>NEngine\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\NEngine\Log.h">
       <Filter>NEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\NEpch.h" />
     <ClInclude Include="src\NothingEngine.h" />
-    <ClInclude Include="src\NEngine\Events\KeyEvent.h" />
-    <ClInclude Include="src\NEngine\Events\MouseEvent.h" />
-    <ClInclude Include="src\NEngine\Events\ApplicationEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\NEngine\Application.cpp">
@@ -36,5 +43,6 @@
     <ClCompile Include="src\NEngine\Log.cpp">
       <Filter>NEngine</Filter>
     </ClCompile>
+    <ClCompile Include="src\NEpch.cpp" />
   </ItemGroup>
 </Project>
