@@ -10,6 +10,11 @@ workspace "NothingEngine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "NothingEngine/vendor/GLFW/include"
+
+include "NothingEngine/vendor/GLFW"
+
 project "NothingEngine"
     location "NothingEngine"
     kind "SharedLib"
@@ -30,7 +35,14 @@ project "NothingEngine"
     includedirs
     {
         "%{prj.name}/src",
-        "%{prj.name}/vendor/spdlog/include"
+        "%{prj.name}/vendor/spdlog/include",
+        "%{IncludeDir.GLFW}"
+    }
+
+    links
+    {
+            "GLFW",
+            "opengl32.lib"
     }
 
     filter "system:windows"
@@ -50,7 +62,11 @@ project "NothingEngine"
         }
 
     filter "configurations:Debug"
-        defines "NOTHING_ENGINE_DEBUG"
+        defines
+        {
+            "NOTHING_ENGINE_DEBUG",
+            "NOTHING_ENGINE_ENABLE_ASSERTS"
+        }
         symbols "On"
 
     filter "configurations:Release"
@@ -91,6 +107,12 @@ project "Sandbox"
         {
             "NOTHING_ENGINE_PLATFORM_WINDOWS"
         }
+
+        filter "configurations:Debug"
+            defines
+            {
+                "NOTHING_ENGINE_ENABLE_ASSERTS"
+            }
 
     links
     {

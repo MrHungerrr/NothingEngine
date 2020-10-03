@@ -1,10 +1,8 @@
 #pragma once
 
-
 #include "Core.h"
 #include "Events/Event.h"
-#include "NEngine/Events/ApplicationEvent.h"
-#include "NEngine/Log.h"
+#include "Window.h"
 
 
 
@@ -17,6 +15,10 @@ namespace NothingEngine
 		virtual ~Application();
 
 		void Run();
+
+	private:
+		std::unique_ptr<Window> m_Window;
+		bool m_IsRunning = true;
 	};
 
 	// To be defined in client

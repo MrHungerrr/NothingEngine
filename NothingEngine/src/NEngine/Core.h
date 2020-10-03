@@ -10,3 +10,11 @@
 #else
 	#error NothingEngine only on Windows!
 #endif
+
+#ifdef NOTHING_ENGINE_ENABLE_ASSERTS
+	#define NE_ASSERT(x, ...) { if(!(x)) { NE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+	#define NE_CORE_ASSERT(x, ...) { if(!(x)) { NE_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+#else
+	#define NE_ASSERT(x, ...)
+	#define NE_CORE_ASSERT(x, ...)
+#endif

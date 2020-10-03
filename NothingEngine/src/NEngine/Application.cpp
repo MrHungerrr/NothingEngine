@@ -1,9 +1,12 @@
 #include <NEpch.h>
 #include "Application.h"
 
+#include <GLFW/glfw3.h>
+
 
 NothingEngine::Application::Application()
 {
+	m_Window = std::unique_ptr<Window>(Window::Create());
 }
 
 NothingEngine::Application::~Application()
@@ -12,9 +15,8 @@ NothingEngine::Application::~Application()
 
 void NothingEngine::Application::Run()
 {
-	WindowResizeEvent e(1280, 720);
-
-	NE_CORE_INFO(e);
-
-	while (true);
+	while (m_IsRunning)
+	{
+		m_Window->Update();
+	}
 }
